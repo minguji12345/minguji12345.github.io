@@ -3,152 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>정보통신공학 포트폴리오</title>
     <style>
-        /* 기본 스타일 */
-        * {
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            line-height: 1.6;
-            background-color: #f0f4f8;
+            background-color: #f4f4f4;
             color: #333;
-            margin: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #4CAF50;
         }
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
             padding: 0 20px;
         }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px 0;
+        }
         .section {
-            margin-bottom: 40px;
+            background: #ffffff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #4CAF50;
-        }
-        .about p {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .project-card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-        .project-card h3 {
-            margin-bottom: 10px;
-            color: #4CAF50;
-        }
-        .project-card p {
-            font-size: 0.9em;
-            color: #555;
+            color: #35424a;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
         }
         footer {
-            background-color: #333;
-            color: white;
+            background: #35424a;
+            color: #ffffff;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
+        .project {
+            background: #f9f9f9;
+            border-left: 4px solid #e8491d;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .skill {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 5px 10px;
+            margin: 5px;
             border-radius: 5px;
-            text-align: center;
-        }
-        .button:hover {
-            background-color: #45a049;
-        }
-        /* 반응형 디자인 */
-        @media (max-width: 768px) {
-            .projects {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>나의 포트폴리오</h1>
-        <p>정보통신공학과 3학년 | 프론트엔드 개발자 목표</p>
+        <div class="container">
+            <h1>정보통신공학 포트폴리오</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#projects">프로젝트</a></li>
+                    <li><a href="#skills">기술</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="#about">소개</a>
-        <a href="#projects">프로젝트</a>
-        <a href="#contact">연락처</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="section about">
+
+    <main class="container">
+        <section id="about" class="section">
             <h2>소개</h2>
-            <p>안녕하세요! 저는 정보통신공학을 전공하며, 웹 개발과 디자인에 열정을 가지고 있습니다.</p>
-            <p>사용자 친화적인 UI/UX 설계를 목표로 다양한 프로젝트를 진행 중입니다.</p>
+            <p>안녕하세요, 저는 정보통신공학과 3학년 학생입니다. 네트워크 및 통신 시스템에 대한 깊은 관심을 가지고 있으며, 혁신적인 기술 솔루션을 개발하는 것을 목표로 하고 있습니다.</p>
         </section>
-        <section id="projects" class="section projects">
+
+        <section id="projects" class="section">
             <h2>프로젝트</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>스마트 냉장고 관리 시스템</h3>
-                    <p>IoT와 AI를 활용한 냉장고 관리 솔루션 개발 프로젝트</p>
-                </div>
-                <div class="project-card">
-                    <h3>자동 분리수거 시스템</h3>
-                    <p>환경 보호를 위한 스마트 쓰레기통 설계</p>
-                </div>
-                <div class="project-card">
-                    <h3>온라인 포트폴리오 사이트</h3>
-                    <p>HTML, CSS, JavaScript를 활용한 개인 웹사이트 개발</p>
-                </div>
+            <div class="project">
+                <h3>무선 센서 네트워크 설계</h3>
+                <p>IoT 기기들 간의 효율적인 통신을 위한 무선 센서 네트워크를 설계하고 구현했습니다.</p>
+            </div>
+            <div class="project">
+                <h3>네트워크 보안 프로토콜 개발</h3>
+                <p>데이터 전송 중 보안을 강화하기 위한 새로운 암호화 프로토콜을 개발했습니다.</p>
             </div>
         </section>
-        <section id="contact" class="section contact">
-            <h2>연락처</h2>
-            <p>이메일: example@example.com</p>
-            <p>GitHub: <a href="https://github.com/yourusername" class="button" target="_blank">Visit My GitHub</a></p>
+
+        <section id="skills" class="section">
+            <h2>기술</h2>
+            <div class="skills">
+                <span class="skill">네트워크 프로토콜</span>
+                <span class="skill">C++</span>
+                <span class="skill">Python</span>
+                <span class="skill">데이터베이스 관리</span>
+                <span class="skill">클라우드 컴퓨팅</span>
+                <span class="skill">사물인터넷(IoT)</span>
+            </div>
         </section>
-    </div>
+
+        <section id="contact" class="section">
+            <h2>연락처</h2>
+            <p>이메일: student@example.com</p>
+            <p>전화번호: 010-1234-5678</p>
+            <p>GitHub: github.com/student</p>
+        </section>
+    </main>
+
     <footer>
-        &copy; 2024 포트폴리오. All Rights Reserved.
+        <div class="container">
+            <p>&copy; 2024 정보통신공학 포트폴리오. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
